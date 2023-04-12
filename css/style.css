@@ -1,0 +1,167 @@
+/* regras gerais */
+
+* {
+  /* background-color: rgb(71, 83, 106); */
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+ }
+
+ /* css grid */
+ 
+ .container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". cabecalho ."
+    ". conteudo ."
+    ". conteudo .";
+}
+
+.cabecalho { grid-area: cabecalho; }
+
+.conteudo { grid-area: conteudo; }
+
+
+/* espaço entre os objetos gerais */
+
+p, input, label, h3, select, strong, div {
+  margin: 5px;
+  outline: 0;
+}  
+
+/* aparencia dos inputs gerais */
+
+input[type=text], input[type=number], input[type=submit], input[type=date], input[type=email], input[type=tel], select {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(50, 50, 50);
+  /* box-shadow: 0 0 4px 1px rgb(50, 50, 50); */
+}
+select {
+  background-color: white;
+  width: 50vh;
+}
+
+/* tamanho dos campos de texto gerais */
+
+input[type=text], input[type=email] {
+  width: 65vh;
+}
+
+/* peso das fontes gerais */
+
+label, h3 {
+  /* color: rgb(172, 186, 228); */
+  color: #1c1c1c;
+  font-weight: 400;
+}
+
+label.label {
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.titulo {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 800;
+  /* color: rgb(120, 145, 219); */
+}
+
+h2 {
+  font-weight: bold;
+  color: #000000;
+  width: 70vh;
+}
+
+/* aparencia do formulario */
+
+div.conteudo, div.cabecalho {
+  /* box-shadow: 1px 1px 1px 1px rgb(229, 231, 236); */
+  border: 1px groove rgb(137, 140, 146);
+  border-radius: 7px;
+  padding: 30px 50px;
+  /* background-color: rgb(71, 83, 106); */
+  background-color: rgb(199, 230, 245);
+  margin: 0px 0px 20px;
+  box-shadow: 2px 2px 2px 2px rgb(180 180 180 / 20%);
+}
+
+/* espaço acima do cabecalho */
+
+div.cabecalho {
+  margin-top: 20px;
+}
+
+/* aparencia botao de submit */
+
+input[type=submit] {
+  background-color: rgb(68 157 68);
+  border-color: rgb(68 157 68);
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  box-shadow: none;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+/* alinhar campos data de nasc e telefone */
+
+div.campoDataNasc, div.campoTelefone {
+  display: inline-block;
+}
+
+/* alinhar campos lado a lado */
+
+input#Name, input#Email {
+  width: 31vh;
+}
+
+div.campoNome, div.campoEmail {
+  display: inline-block;
+}
+
+div.campoCurso, div.campoPrevFormatura {
+  display: inline-block;
+}
+
+div.campoPrevFormatura {
+  margin-left: 1.3vh;
+}
+
+input#PrevForm {
+  width: 11.8vh;
+}
+
+input#dataNasc {
+  width: 20.4vh;
+}
+
+input#Rua {
+  width: 41.5vh;
+}
+
+div.campoEndereco, div.campoDataNasc {
+  display: inline-block;
+}
+
+input#InstEns {
+  width: 34vh;
+}
+
+div.campoInstEnsino, div.campoTelefone, div.campoPrevFormatura {
+  display: inline-block;
+}
+
+select#Curso {
+  width: 45vh;
+}

@@ -1,0 +1,40 @@
+/*  ||  Classes
+
+container: classe css grid
+cabecalho: classe css grid
+campo:     classe das areas (fieldset) do formulario
+conteudo:  classe css grid
+titulo:    classe titulos
+campo$:    classes dos campos de input
+label:     classes das labels de pergunta (não label de resposta)
+opcao:     classes das opções de radio
+submit:    classe do botão de submit  */
+
+/*  ||  Variáveis  */
+
+* {
+  --dark-color: #404258;
+  --light-color: #6B728E;
+  --verde-botao: #449d44;
+  --azul-formulario: #c7e6f5;
+  --cor-fonte-preta: rgb(26, 26, 26);
+  --cor-fonte-branca: rgb(230, 226, 226);
+}
+
+/*  ||  Estilos e Regras Gerais  */
+
+* { font-family: 'Open Sans', sans-serif;
+    color: var(--cor-fonte-preta);
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none; }
+
+p,
+input,
+label,
+h2,
+h3,
+select,
+strong,
+div { margin: 5px; }
